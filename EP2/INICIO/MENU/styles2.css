@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#contenedor {
+    max-width: 1250px;
+    margin: auto;
+}
+#cabecera {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+.logo {
+padding: 10px;
+margin-bottom: 10px;
+}
+.navegacion {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.centered-elements {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.navegacion li{
+    display: inline;
+    text-align: center;
+    margin: 0 50px 0 0;
+    padding: 10px 0;
+    flex-grow: 1;
+}
+.navegacion li a {
+    padding: auto;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+.efecto1 {
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 20px;
+    opacity: 0.7;
+}
+.efecto1:hover {
+    transform: scale(1.1);
+    color: #520303;
+    font-size: 1.4em; 
+    font-weight: bold; 
+}
+@media screen and (max-width: 768px) {
+    .navegacion {
+        flex-wrap: wrap; 
+    }
+    .navegacion li {
+        margin: 10px 0; 
+    }
+}
+#contenido {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+#cabezadecontenido {
+    justify-content: center;
+    margin-left: 100px;
+    color: #520303;
+    text-decoration: underline;
+    font-family: Chakra Petch;
+}
+.texto {
+    color: #000;
+    font-weight: bold;
+}
+.menu {
+    width: 100%; 
+    padding: 0;
+    color: #fff;
+    font-weight: bold;
+    background-image: url(../../img/fondo1.png);
+    border-radius: 10px;
+}  
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+} 
+.menu li {
+    padding: 10px;
+}
+.menu li a {
+    text-decoration: none;
+    color: #333; 
+}
+.titulos {
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor > div {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+.menu2 {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.menu2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu2 li {
+    display: inline;
+}
+
+.menu2 li a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 40px 0 0;
+    padding: 10px 0;
+    opacity: 0.7;
+    font-size: 20px;
+}
+.menu2 li a:hover {
+    font-size: 1.3em; 
+    font-weight: bold; 
+    color: #520303;
+}
+.seccion2 {
+    border: 2px solid black;
+    background-image: url(./../img/fondo2.png);
+    font-size: 18px;
+    font-size:px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 60%;
+}
+
+.divimg {
+    width: 300px;
+    justify-content: center;
+    text-align: right;
+    font-weight: bold;
+    font-family: Chakra petch;
+    font-size: 25px;
+}
+.seccion1 {
+    border: 2px solid black;
+    width: 30%
+}
+.seccion1, .seccion2 {
+    padding: 20px;
+    border: 1px solid rgb(172, 9, 9);
+    margin: 20px 40px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.text-item {
+    flex-direction: column;
+    padding: 0;
+    color: red;
+    font-family: Chakra Petch;
+}
+.img-items {
+    display: flex;
+    padding: 0px;
+}
+.column {
+    flex: 1;
+    padding: 0 10px;
+}
+.column2 {
+    flex: 1;
+    padding: 0 20px;
+}
+.kfimg {
+    margin-top: 50px;
+    background-image: url(../../img/fondo1.png);
+    padding: 10px;
+    border-radius: 50%;
+    float: left;
+}
+.aqui {
+    background-color:  rgb(172, 9, 9);
+    color: white;
+    border-radius: 30px; 
+    padding: 15px 30px;
+    justify-content: center;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.aqui:hover {
+    transform: scale(1.2); 
+    font-size: 23px; 
+}
+.sesion  {
+    padding: 9px 25px;
+    border: 2px solid #000; 
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px; 
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+}
+.sesion:hover {
+    font-size: 16px;
+}
+.registrarse {
+    background-image: url(../../img/fondo1.png);
+    color: #fff;
+    border-radius: 30px; 
+    padding: 9px 30px;
+    font-size: 18px;
+}
+.registrarse:hover {
+    font-size: 16px;
+}
+hr {
+    opacity: 0.3; 
+    border: none; 
+    border-top: 2px solid #000; 
+    z-index: 2;
+}
+#pie {
+    background-image: url(../../img/fondo1.png);
+}
+.redes {
+    filter: brightness(0.1); 
+}
+.img3 {
+    text-align: right;
+}
